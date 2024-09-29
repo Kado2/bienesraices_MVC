@@ -1,0 +1,1 @@
+Proyecto realizado en el curso de Udemy "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL" de  Juan Pablo de la torre Valdez. Lo subo sin alguna preview por el momento, cuando este más tranquilo con las materias de la facultad hago el deployment como corresponde de este proyecto
