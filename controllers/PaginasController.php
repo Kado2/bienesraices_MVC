@@ -48,10 +48,10 @@ class PaginasController {
             $mail->isSMTP();
             //Host del inbox
             $mail->Host = 'sandbox.smtp.mailtrap.io';
-            $mail->SMTPAuth = true;
-            $mail->Port = 465;
-            $mail->Username = '0025afa6d789f1';
-            $mail->Password = '73becfe5de8e12';
+            $mail->SMTPAuth = ********; // 
+            $mail->Port = **********;
+            $mail->Username = '***********';
+            $mail->Password = '************'; 
             $mail->SMTPSecure = 'tls'; //transport layer security (previamente se usaba ssl, ahora se usa para certificados)
             //Configuracion del contenido del email
             $mail->setFrom('admin@bienesraices.com');
