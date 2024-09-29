@@ -1,0 +1,91 @@
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        align-items: flex-end;
+    }
+    .dark-mode-boton {
+        max-width: 100%;
+        width: 3rem;
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        filter: invert(100%);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include tablet {
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }   
+}
+.logo-nav {
+    max-width: 100%;
+    width: 28rem;
+    height: auto;          
+}
+.navegacion {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+    }
+    a {
+        color: $blanco;
+        font-size: 1.8rem;
+        font-weight: 400;
+        display: block;
+        text-align: center;
+        @include tablet {
+            margin-right: 2rem;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+        &:hover {
+            color: $verde;
+        }
+    }
+}
+
+/** Hamburger menu */
+.mobile-menu {
+
+    @include tablet {
+        display: none;
+    }
+    img {
+        width: 5rem;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}

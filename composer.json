@@ -1,0 +1,21 @@
+{
+    "name": "agustin/bienesraices_inicio_poo",
+    "description": "Proyecto con POO",
+    "authors": [
+        {
+            "name": "Agustin",
+            "email": "agustin.gue67@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./models",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers"
+        }
+    }
+}
